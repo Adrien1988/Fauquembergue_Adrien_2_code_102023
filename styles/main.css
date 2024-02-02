@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Allan&family=Open+Sans:wght@400;600;700;800&display=swap");
+@import "modules/navBar.css";
+@import "modules/header.css";
+@import "modules/footer.css";
+@import "pages/indexBody.css";
+@import "pages/programmeBody.css";
+@import "pages/reservationBody.css";
+@import "pages/contactBody.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+
+:root {
+  /* Colors */
+  --golden-tainoi: #f9bc50;
+  --river-bed: #4e5f60;
+  --black: #000000;
+  --nevada: #6c7879;
+  --white: #ffffff;
+  --gainsboro: #d9d9d9;
+  --jungle-mist: #b8bfbf;
+
+  /* Text configuration NavBar */
+  --Nav-font: "Open Sans";
+  --Nav-font-weight: 700;
+  --Nav-font-size: 1.07rem;
+  --Nav-line-height: normal;
+
+  /* Text configuration header */
+  --header-font: "Open Sans";
+  --header-font-bis: "Allan";
+  --header-font-weight: 800;
+  --header-font-weight-bis: 400;
+  --header-font-size: 4.7rem;
+  --header-font-size-bis: 4.07rem;
+  --header-line-height: normal;
+
+  /* Text configuation body */
+  --body-font: "Open Sans";
+  --body-btn-font-weight: 800;
+  --body-title-font-weight: 700;
+  --body-subtitle-font-weight: 600;
+  --body-card-font-weight: 400;
+  --body-title-font-size: 2.2rem;
+  --body-card-title-font-size: 1.9rem;
+  --body-card-font-size: 1.25rem;
+  --body-line-height: normal;
+
+  /* Text configuration footer */
+  --footer-font: "Open Sans";
+  --footer-title-info-font-weight: 800;
+  --footer-title-font-weight: 600;
+  --footer-info-font-weight: 400;
+  --footer-font-size: 1rem;
+  --footer-line-height: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  #scrollToTopButton {
+    display: block;
+    z-index: 99;
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    background-color: var(--jungle-mist);
+  }
+  #scrollToTopButton i {
+    color: var(--golden-tainoi);
+  }
+  #scrollToTopButton:hover,
+  #scrollToTopButton:focus,
+  #scrollToTopButton:focus-within {
+    cursor: pointer;
+    background-color: var(--nevada);
+  } 

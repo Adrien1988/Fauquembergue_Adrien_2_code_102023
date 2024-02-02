@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.reservation {
+  background-color: var(--golden-tainoi);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.reservation > h2 {
+  color: var(--river-bed);
+  font-family: var(--body-font);
+  font-weight: var(--body-title-font-weight);
+  font-size: var(--body-title-font-size);
+  margin-top: 1.6rem;
+  text-transform: uppercase;
+}
+
+.reservation > div > form {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reservation > div > form > input {
+  width: 54rem !important;
+  height: 5rem !important;
+  border: 1px solid black !important;
+  margin-top: 1rem;
+}
+
+.reservation > div > form > input::placeholder {
+  font-family: var(--body-font);
+  font-weight: var(--body-title-font-weight);
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: var(--jungle-mist) !important;
+}
+
+.reservation > div > form > button {
+  margin-top: 1rem;
+  background-color: var(--river-bed) !important;
+  border-radius: 10px !important;
+  width: 17.7rem;
+  color: var(--golden-tainoi) !important;
+  font-family: var(--body-font) !important;
+  font-weight: var(--body-btn-font-weight) !important;
+  font-size: var(--body-card-title-font-size) !important;
+  line-height: 2.25rem !important;
+}
+
+#number {
+  width: 30.5rem;
+  margin-top: 1rem;
+  border: 1px solid black !important;
+  font-family: var(--body-font);
+  font-weight: var(--body-btn-font-weight);
+  font-size: var(--body-card-font-size);
+  color: var(--river-bed);
+}
+
+#session {
+  width: 30.5rem;
+  margin-top: 1rem;
+  border: 1px solid black !important;
+  font-family: var(--body-font);
+  font-weight: var(--body-btn-font-weight);
+  font-size: var(--body-card-font-size);
+  color: var(--river-bed);
+}
+
+
+.captcha-container {
+    max-width: 280px;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.captcha-container > h2 {
+    font-size: 1rem;
+}
+
+.form-check .form-check-input {
+    float: none;
+}
+
+.form-check-input {
+    border: solid black 1px;
+    margin-top: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.captcha-image {
+    width: 15%;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    margin-left: 0.8rem;
+}

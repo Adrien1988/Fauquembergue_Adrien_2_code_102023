@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
+  height: 50rem;
+}
+
+.header-index {
+  background: url("../../Assets/img/page/Film_plein_air.jpg");
+}
+
+.header-programme {
+  background: url("../../Assets/img/page/image_cinema.jpg");
+}
+
+.header-reservation {
+  background: url("../../Assets/img/page/Ticket2\ 1.jpg");
+}
+
+.header-contact {
+  background: url("../../Assets/img/page/Contact2\ 1.jpg");
+}
+
+header > a {
+  color: var(--golden-tainoi) !important;
+  background: var(--river-bed) !important;
+  font-family: var(--header-font) !important;
+  font-weight: var(--header-font-weight) !important;
+  font-size: 1.25rem !important;
+  line-height: var(--header-line-height) !important;
+  position: absolute;
+  bottom: 5.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16.45rem;
+  height: 3.7rem;
+  border-radius: 10px !important;
+  display: flex!important;
+  align-items: center;
+  justify-content: center;
+}
+
+#index, #programmes, #reservations, #contacts {
+  padding: 2rem;
+}
+
+header > div > h1,
+header > div > h1 > pre {
+  font-family: var(--header-font);
+  font-weight: var(--header-font-weight);
+  font-size: var(--header-font-size);
+  line-height: 6.4rem;
+  color: var(--white);
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: var(--black);
+  text-transform: uppercase;
+  text-align: center;
+  word-spacing: 5px;
+}
+
+header > div > h1 {
+    margin-top: 15rem;
+}
+
+header > div > h1 > span {
+  font-family: var(--header-font-bis);
+  font-size: var(--header-font-size-bis);
+  font-weight: var(--header-font-weight-bis);
+  text-transform: none;
+}
+
+@media screen and (max-width: 768px) {
+  h1 > span {
+    font-size: 3.4rem !important;
+  }
+
+  h1 > pre {
+    font-size: 3rem !important;
+  }
+
+  header {
+    height: 45rem;
+  }
+
+  #index > h1 {
+    margin-top: 9rem;
+  }
+
+  #programmes > h1 {
+    line-height: 7rem;
+    font-size: 3rem;
+  }
+
+  #reservations > h1 {
+    font-size: 5rem;
+  }
+
+  #contacts > h1 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 > span {
+    font-size: 2.8rem !important;
+  }
+
+  h1 > pre {
+    font-size: 1.6rem !important;
+  }
+
+  #programmes > h1 {
+    line-height: 4rem;
+    font-size: 2rem;
+  }
+
+  #reservations > h1 {
+    font-size: 3rem;
+  }
+
+  #contacts > h1 {
+    font-size: 3rem;
+  }
+}

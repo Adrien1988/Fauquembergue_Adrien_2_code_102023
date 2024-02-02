@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.map {
+  text-align: center;
+}
+
+.contact {
+  background-color: var(--golden-tainoi);
+  width: 61rem;
+  height: 45rem;
+}
+
+.map > h2,
+.contact > h2 {
+  font-family: var(--body-font);
+  font-weight: var(--body-title-font-weight);
+  font-size: var(--body-title-font-size);
+  line-height: 4rem;
+  text-transform: uppercase;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.map > .row > .col {
+  flex-direction: column;
+}
+
+.contact > div > form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact > div > form > input,
+.contact > div > form > textarea {
+  width: 34rem !important;
+  height: 3rem !important;
+  border: 1px solid black !important;
+  margin-top: 1rem;
+}
+
+.contact > div > form > textarea {
+  height: 10rem !important;
+}
+
+.contact > div > form > input::placeholder,
+.contact > div > form > textarea::placeholder {
+  font-family: var(--body-font);
+  font-weight: var(--body-title-font-weight);
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: var(--jungle-mist) !important;
+}
+
+.contact > div > form > button {
+  margin-top: 3rem;
+  background-color: var(--river-bed) !important;
+  border-radius: 10px !important;
+  width: 18rem;
+  color: var(--golden-tainoi) !important;
+  font-family: var(--body-font) !important;
+  font-weight: var(--body-btn-font-weight) !important;
+  font-size: var(--body-card-title-font-size) !important;
+  line-height: 2.25rem !important;
+}
+
+.captcha-container {
+    max-width: 280px;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.captcha-container > h2 {
+    font-size: 1rem;
+}
+
+.form-check .form-check-input {
+    float: none;
+}
+
+.form-check-input {
+    border: solid black 1px;
+    margin-top: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.captcha-image {
+    width: 15%;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    margin-left: 0.8rem;
+}
+
+@media screen and (max-width: 480px) {
+  .map {
+    height: auto;
+  }
+  .map > div > div > div > p {
+    font-size: small;
+  }
+
+  .contact {
+    width: 22rem;
+    height: auto;
+  }
+
+  .map > h2,
+  .contact > h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact > form > input {
+    width: 21rem !important;
+    height: 2.5rem !important;
+  }
+
+  .contact > form > textarea {
+    height: 5rem !important;
+  }
+
+  .contact > form > button {
+    width: 17rem;
+  }
+}

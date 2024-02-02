@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival des films de plein air - Accueil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/jpg" href="Assets/img/navBar/Films_de_Plein_Air_Logo_1.jpg">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://kit.fontawesome.com/9e34554007.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header-contact">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html"><img class="navBar__logo"
+                    src="Assets/img/navBar/Films_de_Plein_Air_Logo_1.jpg" alt="Logo Films de Plein Air"></a>
+            <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end mt-2" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item ms-auto me-3">
+                        <a class="nav-link" href="index.html">
+                            <i class="fa-solid fa-house"></i>
+                            Accueil
+                        </a>
+                    </li>
+                    <li class="nav-item ms-auto me-3">
+                        <a class="nav-link" href="programme.html">
+                            <i class="fa-solid fa-list"></i>
+                            Programme
+                        </a>
+                    </li>
+                    <li class="nav-item ms-auto me-3">
+                        <a class="nav-link" href="reservation.html">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            Réservation
+                        </a>
+                    </li>
+                    <li class="nav-item ms-auto me-3 active">
+                        <a class="nav-link" href="contact.html">
+                            <i class="fa-solid fa-address-book"></i>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container" id="contacts">
+            <h1>Contact</h1>
+        </div>
+    </header>
+    <main>
+        <section class="map container mt-3">
+            <h2 class="text-center">Se Rendre au Festival</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-3">
+                <div class="col container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.873553553889!2d2.3063800768474545!3d48.87968699920712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc%20Monceau!5e0!3m2!1sfr!2sfr!4v1699016512413!5m2!1sfr!2sfr"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col container mt-3">
+                    <div>
+                        <img src="Assets/icons/map_regular_1.svg" alt="">
+                        <p>Parc Monceau<br>35, boulevard de Courcelles<br>75008 Paris</p>
+                        <p>Complément d'adresse<br>Accés: boulevard de courcelles, avenue<br>Vélasquez, avenue Van Dyck,
+                            avenue Ruysdael</p>
+                    </div>
+                    <div>
+                        <img src="Assets/icons/train_subway_solid_1.svg" alt="">
+                        <p>Métro Monceau, ligne 2</p>
+                    </div>
+                    <div>
+                        <img src="Assets/icons/bus_solid_1.svg" alt="">
+                        <p>Bus 30 ou 84, Monceau</p>
+                    </div>
+                    <div>
+                        <img src="Assets/icons/bicycle_solid_1.svg" alt="">
+                        <pre>       Vélib      
+        Station 17018, 4 rue de Thann
+        Station 8036, 39 rue de Lisbonne
+        Station 8044, 2 rue Alfred de Vigny
+                    </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact container mt-4 mb-4">
+            <h2 class="text-center">Formulaire de contact</h2>
+            <div class="row">
+                <form action="" method="get">
+                    <input class="form-control mb-3" type="text" name="contactName" id="contactName"
+                        placeholder="Votre Nom et Prénom *" required>
+                    <input class="form-control mb-3" type="email" name="contactEmail" id="contactEmail"
+                        placeholder="Votre Email *" required>
+                    <textarea class="form-control mb-3" name="message" id="message" cols="40" rows="5"
+                        placeholder="Votre Message *" required></textarea>
+
+                    <button class="btn" type="submit" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">Envoyer</button>
+                </form>
+                <div class="captcha-container mb-3">
+                    <h2 class="text-center">ReCaptcha</h2>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="captchaInput" class="form-label">Je ne suis pas un robot</label>
+                        <img class="captcha-image" src="Assets/icons/captcha 1.svg" alt="Captcha Image">
+                    </div>
+                </div>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Confirmation de réservation</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Votre demande de contact a bien été envoyée. Nous reviendrons vers vous au plus vite.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="foot d-flex flex-row justify-content-around">
+            <div class="addresses mt-4">
+                <h3><img class="me-4" src="Assets/icons/Line 2.svg" alt="trait verticale">Infos Contact</h3>
+                <div class="coordonees mt-4">
+                    <p><img class="me-2" src="Assets/icons/Icon_situation.svg" alt="logo point carte">Adresse: <span>35
+                            boulevard
+                            Courcelles,
+                            75008 Paris</span></p>
+                </div>
+                <div class="coordonees">
+                    <p><img class="me-2" src="Assets/icons/Icon_téléphone.svg" alt="logo téléphone">Téléphone:
+                        <span>0600000000</span>
+                    </p>
+                </div>
+                <div class="coordonees">
+                    <p><img class="me-2" src="Assets/icons/Icon_email.svg" alt="logo mail">Email:
+                        <span>contact@lesfilmsdepleinair.fr</span>
+                    </p>
+                </div>
+                <div class="credits">
+                    <p>© 2023 Festival Les Films de Plein Air</p>
+                    <p>Conception du site : Adrien Fauquembergue</p>
+                </div>
+            </div>
+            <div class=" d-flex justify-content-center">
+                <img src="Assets/icons/Line 1.svg" alt="ligne vertical de séparartion">
+            </div>
+            <div class=" reseaux mt-4">
+                <h3><img class="me-4" src="Assets/icons/Line 2.svg" alt="trait verticale"> Nous Suivre</h3>
+                <div class="social-links d-flex flex-row justify-content-around">
+                    <a href="#"><img src="Assets/icons/Icon_twitter.svg" alt="Logo twitter"></a>
+                    <a href="#"><img src="Assets/icons/Icon_facebook.svg" alt="Logo facebook"></a>
+                    <a href="#"><img src="Assets/icons/Icon_instagram.svg" alt="Logo instagram"></a>
+                </div>
+                <div class="links-info">
+                    <a href="#">Politique de Confidentialité</a>
+                    <img src="Assets/icons/Line 2.svg" alt="trait verticale">
+                    <a href="#">Mentions Légales</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
+    </script>
+</body>
+
+</html>
